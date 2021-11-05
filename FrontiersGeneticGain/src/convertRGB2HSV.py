@@ -37,7 +37,7 @@ for im in imList:
     v = maxc
     
     deltac = maxc - minc
-    s = deltac / maxc
+    # s = deltac / maxc
     deltac[deltac == 0] = 1  # to not divide by zero (those results in any way would be overridden in next lines)
     rc = (maxc - r) / deltac
     gc = (maxc - g) / deltac

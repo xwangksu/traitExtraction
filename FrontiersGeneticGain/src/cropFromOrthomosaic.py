@@ -29,7 +29,7 @@ with fiona.open(plotShape) as shapes:
 # print(geoms[0])
 # print(len(geoms))
 for i in range(len(plotIDs)):
-    plotID = str(plotIDs[i]).split("'")[3]
+    plotID = str(plotIDs[i]) #.split("'")[3]
     # print(plotID)
     if plotID.find("/") != -1:
         plotID = plotID.replace("/","-")

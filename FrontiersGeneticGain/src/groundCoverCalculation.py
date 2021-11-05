@@ -37,6 +37,6 @@ try:
         th1, canopyArea = cv2.threshold(imgFile, 60, 90, cv2.THRESH_BINARY)
         groundCover = np.count_nonzero(canopyArea) / np.count_nonzero(imgFile)
 # Save output file
-        writer.writerow((pid, '{0:.3f}'.format(groundCover)))
+        writer.writerow((pid, '{0:.4f}'.format(groundCover)))
 finally:
     finalFile.close() 
